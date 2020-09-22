@@ -1,15 +1,16 @@
 import React from 'react';
 // import { UseState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Counter from '../src/components/Counter.js';
-import List from '../src/components/List.js';
+import Header from './components/Header.js';
+import Main from './components/Main.js';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
-      <List />
+      <Header />
+      <Main />
     </div>
   );
 }

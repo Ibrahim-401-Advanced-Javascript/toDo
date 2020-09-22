@@ -1,0 +1,16 @@
+
+.navlink {
+  color: #fefefe;
+}
+
+.navlink:hover {
+  color: rgb(230, 164, 22);
+}
+
+#header-title {
+  background: #343a40;
+  color: #fefefe;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
