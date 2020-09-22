@@ -1,0 +1,11 @@
+#form {
+  border: 1px solid red;
+  float: right;
+  width: 50%;
+}
+
+#cards {
+  border: 1px solid green;
+  float: left;
+  width: 50%;
+}
