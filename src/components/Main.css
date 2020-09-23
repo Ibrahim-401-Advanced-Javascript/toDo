@@ -6,13 +6,14 @@
 
 #formfield {
   border-radius: 4px;
-  border: 1px solid grey;
+  border: 1px solid#bbbbbb;
+  margin-top: 1em;
 }
 
 #add {
   background-color: white;
   border-radius: 4px;
-  border: 1px solid grey;
+  border: 1px solid #bbbbbb;
   margin-left: 0.5em;
 }
 
@@ -23,24 +24,24 @@
 }
 
 #card {
-  background-color: #df7474;
+  background-color: #bbbbbb50;
   justify-content: center;
 }
 
 button {
+  border: 1px solid #bbbbbb;
   border-radius: 4px;
-  border: none;
   margin-left: 0.5em;
 }
 
 #done {
-  background-color: #54b38e;
+  background-color: #7cbda4;
 }
 
 #edit {
-  background-color: #f7e580
+  background-color: #f7e580;
 }
 
 #delete {
-  background-color: #bb4545;
+  background-color: #df7474;
 }
