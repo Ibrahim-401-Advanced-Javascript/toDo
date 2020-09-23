@@ -47,18 +47,28 @@ useEffect(() => {
 // ----------------------------
 // Task Completion Checks Below
 const [tally, setClickCount] = useState(0);
-const [completeCheck, toggleFactor] = useState(false);
+// const [completeCheck, toggleFactor] = useState(false);
 
-const handleClick = () => {
+const handleDone = () => {
   // increment click counter by one each time button is clicked
   setClickCount(tally + 1);
+  // change background color to green
+}
 
-  // document true if tally is divisible by 5
-  const newTally = tally + 1;
-  if (newTally % 5 === 0) {
-    toggleFactor(true);
-  } else toggleFactor(false);
+const handleEdit = () => {
+  console.log(`editing ${task}`);
+  // bring up form to allow user to change text of task card
+}
+
+const handleDelete = () => {
+
+  // remove task card from the list
+  console.log(task.length);
+
+  console.log(`${task} deleted`);
   
+  // decrement task.length in Completed section
+  console.log(task.length - 1);
 }
 // ----------------------------
 
@@ -70,7 +80,8 @@ const handleClick = () => {
         <section id="form">
           <h5 id="taskprompt">What needs to be done?</h5>
           <form onSubmit={_addTask}>
-            <input type="text" onChange={_writeTask} />
+            <input type="text" id="formfield" onChange={_writeTask} />
+            <input type="submit" id="add" value="add"></input>
           </form>
         </section>
 
@@ -78,8 +89,6 @@ const handleClick = () => {
 
           <div>
             <h5>Completed: {tally} / {task.length}</h5>
-            {/* <h3>Factor of Five? {completeCheck.toString()}</h3> */}
-            {/* <button onClick={handleClick}>click this</button> */}
           </div>
 
           <Card id="tasklist" style={{ width: '18rem' }}>
@@ -87,8 +96,11 @@ const handleClick = () => {
             task.map(task => 
 
             <ListGroup variant="flush">
-              <ListGroup.Item key={task}>
-                {task} <button onClick={handleClick}>Done</button>
+              <ListGroup.Item id="card" key={task}>
+                {task}
+                <button id="done" onClick={handleDone}>done</button>
+                <button id="edit" onClick={handleEdit}>edit</button>
+                <button id="delete" onClick={handleDelete}>delete</button>
               </ListGroup.Item>
             </ListGroup>
 

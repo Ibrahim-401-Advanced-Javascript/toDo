@@ -12,7 +12,7 @@ function Header() {
     <header>
       <h2 id="header-title">Task Manager</h2>
 
-      <Navbar bg="dark" variant="dark" defaultActiveKey="/home">
+      <Navbar bg="dark" variant="dark" defaultactivekey="/home">
 
         <Nav.Item>
           <Nav.Link className="navlink" href="/home">Home</Nav.Link>
