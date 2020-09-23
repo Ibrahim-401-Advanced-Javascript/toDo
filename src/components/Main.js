@@ -1,6 +1,7 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
-import { Card, ListGroup } from 'react-bootstrap';
+import { useState, useEffect } from 'react'
+import { Card, ListGroup } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 
 import './Main.css';
 
@@ -74,6 +75,14 @@ const handleDelete = () => {
 
   return (
     <section className="Main">
+
+      <div>
+        <Navbar bg="dark" variant="dark">
+          <Nav id="header-title">
+            <h3>Task Manager: {tally} / {task.length} </h3>
+          </Nav>
+        </Navbar>
+      </div>
 
       <div>
 
