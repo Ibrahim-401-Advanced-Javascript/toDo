@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header>
-      <h2 id="header-title">Task Manager</h2>
+      
 
       <Navbar bg="dark" variant="dark" defaultactivekey="/home">
 
