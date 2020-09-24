@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-function Form() {
+function Form(props) {
 
 
   const [task, setTasks] = useState([]);
@@ -28,12 +28,12 @@ function Form() {
     console.log('Initial mount');
   });
   
-  // runs any time a name changes
+  // runs any time a task name changes
   useEffect(() => {
     console.log('Typed:', taskName);
   }, [taskName]);
   
-  // runs when a name is added / task changes
+  // runs when a task is added
   useEffect(() => {
     console.log('Task added:', task);
   }, [task]);

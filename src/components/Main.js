@@ -33,12 +33,12 @@ useEffect(() => {
   console.log('Initial mount');
 });
 
-// runs any time a name changes
+// runs any time a task name changes
 useEffect(() => {
   console.log('Typed:', taskName);
 }, [taskName]);
 
-// runs when a name is added / task changes
+// runs when a task is added
 useEffect(() => {
   console.log('Task added:', task);
 }, [task]);
@@ -95,10 +95,6 @@ const handleDelete = () => {
         </section>
 
         <section id="cards">
-
-          <div>
-            <h5>Completed: {tally} / {task.length}</h5>
-          </div>
 
           <Card id="tasklist" style={{ width: '18rem' }}>
           {
