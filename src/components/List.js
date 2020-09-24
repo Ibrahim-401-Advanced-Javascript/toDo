@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Card, ListGroup } from 'react-bootstrap'
 
-function List() {
+function List(props) {
 
   const [tally, setClickCount] = useState(0);
   // const [completeCheck, toggleFactor] = useState(false);
@@ -32,10 +32,6 @@ function List() {
 
   return (
     <section id="cards">
-
-          <div>
-            <h5>Completed: {tally} / {task.length}</h5>
-          </div>
 
           <Card id="tasklist" style={{ width: '18rem' }}>
           {
